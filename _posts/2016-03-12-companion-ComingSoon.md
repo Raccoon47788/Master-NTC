@@ -1,10 +1,9 @@
 ---
 layout: companion
-name: "ComingSoon"
+name: ""
 age:
 gender: ""
 location: "" 
-rate: 0
 photos: ["ComingSoon.jpg"]
 intro: ""
 ---
