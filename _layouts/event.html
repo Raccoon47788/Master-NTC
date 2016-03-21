@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% assign room_types = 'Single|Twin|Double' | split: '|' %}
+{% assign max_travellers_per_room = 2 %}
+
+<div>
+
+  <h2>{{ page.title }}</h2>
+
+  <ul class="bxslider">
+    {% for photo in page.photos %}
+      {% assign path = (page.id | split: '/' | last | remove_first: 'event-') %}
+      <li><img src="/images/events/{{ path }}/{{ photo }}" /></li>
+    {% endfor %}
+  </ul>
+
+  {{ content }}
+
+  <div class="price">
+    Price: &pound;{{ page.price }}
+  </div>
+</div>

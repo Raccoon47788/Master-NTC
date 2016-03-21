@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Passion+One);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Playball);
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* NorwichTravelCompanions */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+	position: relative;
+	margin-top: 60px;
+	font-size: 1rem;
+	text-align: center;
+	background-color: #D1C5B7;
+	min-height: calc(100% - 60px);
+	padding-bottom: 170px;
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-size: 2rem;
+	text-align: center;
+	color: #063E53;
+	font-family: "Lobster", cursive;
+	text-decoration: underline;
+}
+
+h2 {
+	margin-bottom: 10px;
+	font-size: 1.75rem;
+	color: #063E53;
+	text-decoration: underline;
+	font-family: "Kaushan", cursive;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: #063E53;
+	text-decoration: underline;
+	font-family: "Lobster", cursive;
+}
+
+p {
+	color: #5D3402;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+a {
+	color: #0193B7;
+	text-decoration: none; 
+}
+
+img {
+	height: 300px;
+	width: 600px;
+	max-width: 100%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.cf:before,
+.cf:after {
+    content: ' ';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.contain {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#title {
+	font-size: 2rem;
+	color: #063E53;
+	text-decoration: underline;
+	font-family: "Lobster", cursive;
+}
+
+#content {
+	margin-bottom: 10px;
+}
+
+#nav {
+	top: 0;
+	font-size: 1.5rem;
+	width: 100%;
+	height: 50px;
+	background-color: #063E53;
+	font-family: "Lobster", cursive;
+	position: fixed;
+	z-index: 10;
+}
+
+#nav li {
+	display: inline-block;
+	padding: 10px;
+}
+
+#nav a {
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#nav a:hover {
+	background-color: #D1C5B7;
+}
+
+#footer {
+	color: #46AAF5;
+	background-color: #063E53;
+	font-family: "Lobster", cursive;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	height: 170px;
+	width: 100%;
+}
+
+#footer h2 {
+	color: #46AAF5;
+	padding: 5px;
+}
+
+#footer li {
+	color: #46AAF5;
+	padding: 5px;
+}
+
+.grid li {
+	float: left;
+	width: 32%;
+	margin: 0 2% 2% 0;
+}
+
+.grid li:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+.grid a {
+	display: block;
+}
+
+.grid img {
+	border: 2px solid #222;
+}

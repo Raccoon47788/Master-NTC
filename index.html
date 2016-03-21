@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+  <h1>Norwich Travel Companions</h1>
+
+  <h2>About Us</h2>
+  <p>Our commitment is to provide an outstanding service and ease for customers who wish to travel,
+  Meet new peolpe, Obtain long lasting meomries and have a delightful time doing so.
+  On a large amount of our packages we provide a representative who will cater for all your needs,
+  Our representatives are there for assisting you and travel around from excursions, Restaurants 
+  and to assist with any other bookings you wish to make while you are on your event. 
+  Our services range from companions for people travelling alone or just want some company, 
+  Quick and easy packages without the stress of looking around for the best deals.</p>
+  <p>We have special packages for peculiar times of the year like christmas and valentines day.</p>
+
+  <ul class="bxslider">
+    <li><img src="/images/events/London-Monopoly/London1.jpg" /></li>
+    <li><img src="/images/events/London-Monopoly/London2.jpg" /></li>
+    <li><img src="/images/events/London-Monopoly/London3.jpg" /></li>
+    <li><img src="/images/events/Paris-Day-Trip/Paris1.jpg" /></li>
+    <li><img src="/images/events/Paris-Day-Trip/Paris2.jpg" /></li>
+  </ul>
+
+  <p>We also provide a custom package deal which is designed by you, For you.
+  We arrange Hen and stag partys where we cater to all of your hearts desires.
+  If you and your friends wish to have a custom package and can't find the 
+  desired package and wish to book, We will create the package and make the package 
+  with or without having to meet other travellers.</p>
+  
+  <h2 id="companions">Companions</h2>
+  
+  <p>Here at Travellers Network we understand that not everyone has some-one to travel with, So we provide contacts for
+  you to consider before travelling alone. Our companions are happy to help with the travelling needs that you might have,
+  We advise that you conatct them first before booking to avoid disappointment.
+  Our companions are not just for travelling purposes and are available for days out just to spend time with. 
+  Please be aware that our companions work on a day rate and customers are to
+  cover expensives which may be incurred for our companions.</p>
+
+  <h2>How To Become A Companion</h2>
+  
+  <p>Contact us by E-mail with your Name, Phone number, Address, Photos, Age, Description for your post, Expected daily pay,
+  Room sharing and services you are willing to provide. Successful applicants will be on a contract of self-employment and 
+  manage thier own bookings. There will be a interview for verification of your applicantion.</p>
+
+  <ul class="grid cf">
+    {% assign groups = (site.posts | where: 'layout', 'companion' | sort | (group_by: 'gender' | reverse)) %}
+    {% for group in groups %}
+      {% for companion in group.items %}
+        <li>
+          <a href="{{ companion.url | prepend: site.baseurl }}">
+            <img src="/images/companions/{{ path }}/{{ companion.photos[0] }}" />
+            <p>{{ companion.intro }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+<a href="javascript:void( window.open( 'https://form.jotformeu.com/60794033275356', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">Application Form</a>
+
+  <h2 id="events">Events</h2>
+  
+  <p>This page is about our available upcoming events, Which have been put together for customers ease.
+  Packages include a varity differant elements depending on location, Customers and requirements.
+  Some of our packages also include an onsite representative which are there to assist and aid you with
+  any part of the package you may have difficulty with. Also be acting as a guide for you and fellow travellers, 
+  From restaurants, Venues and meeting you on arrival.</p>
+  <p>We also arrange custom packages taylored for your own requirements, Also if there is not available package
+  which you and your friends would be interested booking, We would create a suitable 
+  package at a reasonable price.</p>
+  <p>We also provide great packages for hen and stag partys. Which involve as much as you desire!.<br>
+  If your custom package was made available to other there would be a discount for you.</P>
+  <p>For custom packages contact us or click on the package your interested in.</p>
+
+  <ul class="grid cf">
+    {% assign events = (site.posts | sort: 'start_date' | where: 'layout', 'event') %}
+    {% for event in events %}
+      {% assign path = (event.uid | remove_first: 'event-') %}
+      <li>
+        <a href="{{ event.url | prepend: site.baseurl }}">
+          <img src="/images/events/{{ path }}/{{ event.photos[0] }}" />
+          <p>{{ event.intro }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+ <a href="javascript:void( window.open( 'https://form.jotformeu.com/60792698898382', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">Bookings</a>
