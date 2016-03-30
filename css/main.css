@@ -194,6 +194,10 @@ img {
 	padding: 5px;
 }
 
+.button {
+	border-radius: 50px;
+}
+
 .grid li {
 	float: left;
 	width: 32%;
